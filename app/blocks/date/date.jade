@@ -1,0 +1,6 @@
+include ../input-text/input-text
+
+mixin date()
+	+b('fieldset').date&attributes(attributes)
+		block
+		+input-text("dateField", "text", "Дата заполнения", "18.02.2019").form__input-text
