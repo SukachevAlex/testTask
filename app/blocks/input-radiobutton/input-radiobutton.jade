@@ -1,0 +1,5 @@
+mixin input-radiobutton(id, label, value, name, checked)
+	+b.input-radiobutton&attributes(attributes)
+		block
+		+e('input').input(id=`plan-${id}` type="radio" name=name value=value checked=checked)
+		+e('label').label(for=`plan-${id}`)= label
