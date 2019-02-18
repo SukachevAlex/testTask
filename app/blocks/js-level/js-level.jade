@@ -1,0 +1,8 @@
+include ../slider/slider
+
+mixin js-level()
+	+b('fieldset').js-level&attributes(attributes)
+		block
+		+e('h2').title(class='form__title')
+			| Уровень владения JavaScript
+		+slider(['Не владею', 'Использую готовые решения', 'Использую готовые решения и умею их переделывать', 'Пишу сложный JS с нуля'])
