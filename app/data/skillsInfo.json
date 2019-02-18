@@ -1,0 +1,21 @@
+[
+  {"label": "БЭМ/OOCSS", "checked": true},
+  {"label": "Gulp/GRUNT", "checked": true},
+  {"label": "Использую Git", "checked": true},
+  {"label": "Pug (Jade)", "checked": true},
+  {"label": "Webpack", "checked": true},
+  {"label": "С глазомером всё ок", "checked": true},
+  {"label": "Stylus/LESS/SASS", "checked": true},
+  {"label": "Дружу с WebGL", "checked": false},
+  {"label": "Читаю", "checked": true, "link": "blog.csssr.ru"},
+  {"label": "Работаю с SVG", "checked": true},
+  {"label": "jQuery", "checked": true},
+  {"label": "Я ленивый(-ая)", "checked": false},
+  {"label": "Верстаю семантично", "checked": true},
+  {"label": "Знаю/изучаю Angular", "checked": false},
+  {"label": "У меня хороший английский", "checked": true, "high": true},
+  {"label": "Accessibility (A11Y)", "checked": true},
+  {"label": "Знаю/изучаю React", "checked": true},
+  {"label": "ES2015/ES2016", "checked": true},
+  {"label": "Знаю/изучаю Node.js", "checked": true}
+]

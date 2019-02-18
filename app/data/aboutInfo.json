@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nameField",
+    "type": "text",
+    "label": "Полное ФИО",
+    "value": "Сукачёв Александр Александрович"
+  },
+  {
+    "id": "yearField",
+    "type": "text",
+    "label": "Год рождения",
+    "value": "1994"
+  },
+  {
+    "id": "residenceField",
+    "type": "text",
+    "label": "Место жительства",
+    "value": "г. Симферополь, Россия"
+  },
+  {
+    "id": "skypeField",
+    "type": "text",
+    "label": "Скайп",
+    "value": "sukachevalexandr"
+  },
+  {
+    "id": "emailField",
+    "type": "email",
+    "label": "Почта",
+    "value": "sukachevalexandr@gmail.com"
+  }
+]
