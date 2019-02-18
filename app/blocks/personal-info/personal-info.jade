@@ -1,0 +1,7 @@
+include ../input-text/input-text
+
+mixin personal-info()
+	+b('fieldset').personal-info&attributes(attributes)
+		block
+		each item in getData('aboutInfo')
+			+input-text(item.id, item.type, item.label, item.value).form__input-text
