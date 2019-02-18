@@ -1,6 +1,8 @@
 include ../personal-info/personal-info
+include ../about-info/about-info
 
 mixin form()
 	+b.form&attributes(attributes)
 		block
 		+personal-info
+		+about-info

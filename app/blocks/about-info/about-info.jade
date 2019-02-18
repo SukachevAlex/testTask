@@ -1,0 +1,14 @@
+include ../input-checkbox/input-checkbox
+
+mixin about-info()
+	+b('fieldset').about-info&attributes(attributes)
+		block
+		+e('h2').title(class='form__title')
+			| Расскажите о себе чекбоксами
+		+e('h3').subtitle(class='form__subtitle')
+			| Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у
+			| вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми
+			| гарантировано будете справляться.
+		.skill-checkboxes
+			each item, index in getData('skillsInfo')
+				+input-checkbox(index, item.label, item.checked, item.high, item.link)

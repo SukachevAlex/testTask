@@ -1,0 +1,30 @@
+.input-checkbox
+	position relative
+	margin-bottom 9px
+	display block
+	&__label
+		position relative
+		padding-left 25px
+		font-size 21px
+		font-weight 700
+		line-height 25px
+		cursor pointer
+		color #000000
+		&::before
+			position absolute
+			top -5px
+			display block
+			content ''
+			sprite($checkbox)
+	&__link
+		text-decoration underline
+		color #1f5f97
+		transition color .25s ease
+		&:hover
+			color #2675BA
+	&__input
+		display none
+		&:checked + .input-checkbox__label::before
+			sprite($checkbox_checked)
+	&_high
+		grid-row span 2
