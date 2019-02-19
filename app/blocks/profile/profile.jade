@@ -8,5 +8,6 @@ mixin profile()
 				+e('img').logo(src="images/logo.png", alt="csssr")
 			+e('img').image(src="images/secretly.png", alt="secretly only")
 		+e('main').main
-			+e('img').title(src="images/profile.png", alt="profile title")
+			.profile__title-outer
+				+e('img').title(src="images/profile.png", alt="profile title")
 			+form(class="profile__form", method="POST")

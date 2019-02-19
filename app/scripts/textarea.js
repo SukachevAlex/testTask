@@ -1,7 +1,7 @@
 export default function initTextarea() {
 	const textarea = document.querySelector('.input-textarea');
-	const textareaMinRows = 3;
-	const textareaMaxRows = 20;
+	const textareaMinRows = 18;
+	const textareaMaxRows = 25;
 
 	textarea.addEventListener('keyup', function () {
 		const rowCount = textarea.value.split('\n').length;

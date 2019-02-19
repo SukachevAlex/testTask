@@ -10,12 +10,18 @@
 		font-weight 700
 		line-height 25px
 		cursor pointer
-		&::before
-			position absolute
-			display block
-			content ''
-			sprite($radiobutton)
 	&__input
-		display none
+		top 0
+		left 0
+		visually-hidden()
+		&:checked + .input-radiobutton__box
+			sprite($radiobutton_checked)
+		&:focus + .input-radiobutton__box
+			/*sprite($checkbox__outline)*/
 		&:checked + .input-radiobutton__label::before
 			sprite($radiobutton_checked)
+	&__box
+		position absolute
+		top 0
+		left 0
+		sprite($radiobutton)

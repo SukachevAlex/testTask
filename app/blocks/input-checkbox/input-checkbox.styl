@@ -10,12 +10,6 @@
 		line-height 25px
 		cursor pointer
 		color #000000
-		&::before
-			position absolute
-			top -5px
-			display block
-			content ''
-			sprite($checkbox)
 	&__link
 		text-decoration underline
 		color #1f5f97
@@ -23,8 +17,17 @@
 		&:hover
 			color #2675BA
 	&__input
-		display none
-		&:checked + .input-checkbox__label::before
+		top 0
+		left 0
+		visually-hidden()
+		&:checked + .input-checkbox__box
 			sprite($checkbox_checked)
+		&:focus + .input-checkbox__box
+			/*sprite($checkbox__outline)*/
+	&__box
+		position absolute
+		top -5px
+		left 0
+		sprite($checkbox)
 	&_high
 		grid-row span 2

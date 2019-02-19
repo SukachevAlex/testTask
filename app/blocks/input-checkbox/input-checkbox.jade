@@ -1,7 +1,8 @@
-mixin input-checkbox(id, label, checked, high, link)
+mixin input-checkbox(label, checked, high, link)
 	+b.input-checkbox&attributes(attributes)(class=high ? "_high" : "")
 		block
-		+e('input').input(id=`skill-${id}` type="checkbox" name="name" checked=checked)
-		+e('label').label(for=`skill-${id}`)= label
+		+e('label').label()= label
 			if link
 				+e('a').link(href=`http:\/\/${link}` target='blank')= link
+			+e('input').input(type="checkbox" name="name" checked=checked)
+			+e('span').box
