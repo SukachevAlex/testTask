@@ -3,14 +3,27 @@
 	font-family 'PT Sans'
 	font-weight 400
 	background-image url(/images/background.jpg)
+	@media screen and (max-width: 935px)
+		padding 48px 35px 112px
+	@media screen and (max-width: 650px)
+		padding 40px 35px 50px
 	&__header
 		display flex
+		flex-wrap wrap
 		justify-content space-between
 		align-items center
+		@media screen and (max-width: 550px)
+			flex-direction column
 	&__link
 		margin-top -24px
+		@media screen and (max-width: 550px)
+			margin-top 0
 	&__image
 		margin-right -65px
+		@media screen and (max-width: 935px)
+			margin-right 0
+		@media screen and (max-width: 550px)
+			margin-top 20px
 	&__title-outer
 		display flex
 		justify-content center
@@ -18,3 +31,6 @@
 		margin-left -35px
 	&__form
 		margin-top 59px
+	&__main
+		@media screen and (max-width: 550px)
+			margin-top 30px

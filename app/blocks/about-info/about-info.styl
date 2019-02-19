@@ -8,3 +8,7 @@
 	margin-top 26px
 	display grid
 	grid-template-columns repeat(3, minmax(200px, 1fr))
+	@media screen and (max-width: 935px)
+		grid-template-columns repeat(2, minmax(200px, 1fr))
+	@media screen and (max-width: 550px)
+		grid-template-columns minmax(200px, 1fr)
