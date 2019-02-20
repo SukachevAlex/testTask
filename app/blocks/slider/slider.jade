@@ -1,9 +1,0 @@
-mixin slider(separators)
-	+b.slider&attributes(attributes)
-		block
-		+e.line
-		+e.pointer
-		+e.separators
-			for item in separators
-				+e.separator
-					+e('span').separator-name= item

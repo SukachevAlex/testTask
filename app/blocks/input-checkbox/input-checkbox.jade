@@ -1,8 +1,0 @@
-mixin input-checkbox(label, checked, high, link)
-	+b.input-checkbox&attributes(attributes)(class=high ? "_high" : "")
-		block
-		+e('label').label()= label
-			if link
-				+e('a').link(href=`http:\/\/${link}` target='blank')= link
-			+e('input').input(type="checkbox" name="name" checked=checked)
-			+e('span').box

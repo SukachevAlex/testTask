@@ -1,6 +1,0 @@
-[
-  {"label": "Верстать", "value": "html", "name": "future-plans", "checked": false},
-  {"label": "Прокачиваться в JS", "value": "js", "name": "future-plans", "checked": true},
-  {"label": "Менеджерство", "value": "management", "name": "future-plans", "checked": false},
-  {"label": "Другое", "value": "other", "name": "future-plans", "checked": false}
-]
