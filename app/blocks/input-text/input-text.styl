@@ -8,6 +8,9 @@
 		line-height 50px
 		flex-shrink 0
 		color #2f1b15
+		@media screen and (max-width: 950px)
+			font-size calc(20px + .5vw)
+			line-height calc(30px + 1.1vw)
 	&__input
 		padding-left 15px
 		width 100%
@@ -19,6 +22,9 @@
 		border solid transparent
 		border-width 0 0 3px
 		border-image url(../images/sprites/input.png) 3 repeat
+		@media screen and (max-width: 950px)
+			font-size calc(16px + 1.2vw)
+			line-height calc(30px + .9vw)
 		@media screen and (max-width: 500px)
 			text-align center
 	@media screen and (max-width: 500px)
